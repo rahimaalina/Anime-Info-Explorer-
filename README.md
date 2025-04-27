@@ -11,28 +11,28 @@ Project Structure
 
 # 1. Clone the Repository
 
-git clone https://github.com/rahimaalina/anime-info-explorer.git
-cd anime-info-explorer
+- git clone https://github.com/rahimaalina/anime-info-explorer.git  
+- cd anime-info-explorer
 
 # 2. Install Required Packages
 
-pip install flask requests pandas
+- pip install flask requests pandas
 
 # 3. Fetch Anime Data
 
-python fetch_anime_data.py
+- python fetch_anime_data.py
 
-Enter an anime title (e.g., One Piece, Naruto) when prompted.
+- Enter an anime title (e.g., One Piece, Naruto) when prompted.
 
-It saves the top 20 results into anime.db
+- It saves the top 20 results into anime.db
 
 # 4. Start Flask Server
 
-python app.py
+- python app.py
 
 # 5. Open in Browser
 
-Go to http://127.0.0.1:5000/
+- Go to http://127.0.0.1:5000/
 
 
 
