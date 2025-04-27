@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anime Info Explorer 🎌</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Anime Info Explorer 🎌</h1>
+
+        <form method="post" style="text-align:center; margin-bottom:20px;">
+            <input type="text" name="query" placeholder="Search anime title..." value="{{ search_query }}">
+            <button type="submit">Search</button>
+            <a href="/" style="margin-left:10px;">Reset</a>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Type</th>
+                    <th>Episodes</th>
+                    <th>Score</th>
+                    <th>Studio</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% if anime_list %}
+                    {% for anime in anime_list %}
+                    <tr>
+                        <td>{{ anime[0] }}</td>
+                        <td>{{ anime[1] }}</td>
+                        <td>{{ anime[2] if anime[2] is not none else 'N/A' }}</td>
+                        <td>{{ anime[3] if anime[3] is not none else 'N/A' }}</td>
+                        <td>{{ anime[4] if anime[4] is not none else 'N/A' }}</td>
+                        <td>{{ anime[5] if anime[5] is not none else 'N/A' }}</td>
+                    </tr>
+                    {% endfor %}
+                {% else %}
+                    <tr>
+                        <td colspan="6" style="text-align:center;">No results found.</td>
+                    </tr>
+                {% endif %}
+            </tbody>
+        </table>
+
+    </div>
+</body>
+</html>
