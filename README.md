@@ -11,7 +11,7 @@ Project Structure
 
 # 1. Clone the Repository
 
-- git clone https://github.com/rahimaalina/anime-info-explorer.git  
+- git clone [https://github.com/rahimaalina/anime-info-explorer.git ](https://github.com/rahimaalina/Anime-Info-Explorer-) 
 - cd anime-info-explorer
 
 # 2. Install Required Packages
