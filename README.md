@@ -1,7 +1,6 @@
 # Anime-Info-Explorer 🎌
 
-Anime Info Explorer is a fun mini web project that lets you search and browse anime information easily!  
-It uses Python (Flask) for the backend, SQLite for the database, and a simple HTML/CSS front-end.
+Anime Info Explorer is a fun mini web project that lets you search and browse anime information easily! It uses Python (Flask) for the backend, SQLite for the database, and a simple HTML/CSS front-end.
 
 ---
 
